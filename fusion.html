@@ -338,25 +338,7 @@ const firebaseConfig = {
      
      alert('fusion bet painel')
     </script>
-    <script>
-      // Verifica se o usuário está autenticado ao carregar a página
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-          //Usuário está logado, permanece na tela
-          console.log("Usuário logado!");
-        }
     
-    
-        else {
-          //Usuário não está logado, redireciona para index.html
-          console.log("Usuário não logado! Redirecionando...");
-          alert('user não logado😶‍🌫️')
-          window.location.replace("../index.html");
-    
-        }
-    
-      });
-    </script>
     <script src="
     https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
     "></script>
