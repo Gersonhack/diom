@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>diom.Aviator</title>
+  <style>
+    body{
+     background:#42445A;
+    }
+    body:hover{
+      background:hsla(275, 95%, 0%, 1) ;
+    }
+    h3{
+      color:hsla(176, 100%, 50%, 0.93);
+     text-align: center;
+    }
+    .b{
+      width: 70%;
+      height: 40px;
+      border-radius: 30px 1px 30px;
+      border:2px solid black;
+      color:hsla(62, 100%, 50%, 1);
+      background: #74779F;
+      border-left-color: hsla(62, 100%, 49%, 1);
+      border-right-color: hsla(62, 100%, 49%, 1);
+    }
+    .b:hover{
+      border:2px solid red;
+      box-shadow: 0px 0px 40px white
+      ;
+      background: transparent;
+    }
+      .bb:hover {
+        border: 2px solid red;
+        box-shadow: 0px 0px 40px white ;
+        background: transparent;
+      }
+    .bb{
+      color:white;
+      width: 70%;
+      height: 40px;
+      border-radius: 30px 1px 30px;
+      border:3px solid black;
+      border-left-color: white;
+      border-right-color: white;
+      background: #74779F;
+    }
+    div {
+      outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #42445A;
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    
+   
+    box-sizing: border-box;
+    padding: 16px 20px;
+   
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    }
+    
+    div:hover {
+      opacity: .95;
+    }
+    div .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+.animation {
+  animation: alerta 1.5s infinite;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="animation" class="animation">
+  <h3 class="btn"><i class="animation"></i>hello!👋 escolha o robô abaixo para
+  operar<i class="animation"></i>
+    
+   
+  </h3></div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> 
+<center>
+<button class="b" onclick="br()"  >𝔻𝕚𝕠𝕞.𝕒𝕧𝕚𝕒𝕥𝕠𝕣</button>
+<br> <br>
+<button class="bb" onclick="gr()">𝑮𝑬𝑹𝑨𝑫𝑶𝑹</button>
+</center>
+<script>
+  function br(){
+   window.location.href="casas.html"
+  }
+  function gr() {
+    window.location.href = "gera.html"
+  }
+</script>
+</body>
+
+</html>

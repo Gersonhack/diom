@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>diom.aviator</title>
+  <style>
+    body{
+      background: #42445A;
+    }
+    div {
+      outline: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #42445A;
+      min-width: 200px;
+      border: 0;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    
+    
+      box-sizing: border-box;
+      padding: 16px 20px;
+    
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    div:hover {
+      opacity: .95;
+    }
+    
+    div .animation {
+      border-radius: 100%;
+      animation: ripple 0.6s linear infinite;
+    }
+    
+    @keyframes ripple {
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+      }
+    
+      100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+      }
+    }
+    
+    .animation {
+      animation: alerta 1.5s infinite;
+    }
+    h3 {
+      color: hsla(176, 100%, 50%, 0.93);
+      text-align: center;
+    }
+    button{
+      background:transparent;
+      color:white;
+      width: 100%;
+      height: 40px;
+      border-left-color: #069BE4;
+      border-right-color: red;
+     
+    }
+    button:hover{
+    background: transparent;
+   border:3px;
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="animation" class="animation">
+  <h3 class="btn"><i class="animation"></i>escolha a casa de apostas<i class="animation"></i>
+    
+   
+  </h3></div>
+  <br> <br> <br> <br> <br> <br> <br> <br>
+  <center>
+  <button onclick="bb()">
+    Fusion bet
+  </button>
+ <br><br>
+  <button onclick="b()">
+    donald bet
+  </button >
+  
+  <script>
+    function bb(){
+      window.location.href="robb.html"
+    }
+    
+    function b() {
+      window.location.href = "rob.html"
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyB5v0e77dvzHINhHzCKeMs6QPjqo7Z7img",
+    authDomain: "login-database-black.firebaseapp.com",
+    databaseURL: "https://login-database-black-default-rtdb.firebaseio.com",
+    projectId: "login-database-black",
+    storageBucket: "login-database-black.appspot.com",
+    messagingSenderId: "768021690283",
+    appId: "1:768021690283:web:221e866026541faffa04ee"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+  // Verifica se o usuário está autenticado ao carregar a página
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      //Usuário está logado, permanece na tela
+      console.log("Usuário logado!");
+    }
+
+
+    else {
+      //Usuário não está logado, redireciona para index.html
+      console.log("Usuário não logado! Redirecionando...");
+      alert('user não logado😶‍🌫️')
+      window.location.replace("../index.html");
+
+    }
+
+  });
+</script>
+</body>
+
+</html>
