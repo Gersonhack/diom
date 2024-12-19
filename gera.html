@@ -11,9 +11,32 @@
    
      <link rel="stylesheet" type="text/css" href="gera.css">
      <style>
+     
+     *{
+       border:0;
+     }
        /* Estilos gerais da página */
-
+input {
+  height: 35px;
+  background: black;
+  color: skyblue;
+  font-size:18px;
+  border-radius: 10px;
+  border-top:1px solid greenyellow;
+  text-align: center;
+ 
+}
      </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     </script>
+     <script>
+       $(document).ready(function() {
+         $("#optionselect").change(function() {
+           var values = $("#optionselect option:selected").text();
+           $("#selectedcontent").val(values);
+         });
+       });
+     </script>
 </head>
 <body>
 
@@ -21,14 +44,14 @@
           <center>
           <img src="dio.jpg">
             <p>Escolha a sua Casa de Apostas</p><p>
-            <select>
-                <option>aposta1</option>
-                <option>Meucash</option>
-                <option>BR4Bet</option>
-                <option>Goathbet</option>
-                <option>Headsbet</option>
-               
+<select id="optionselect">
+              <option value="" selected disable> escolha a casa de apostas </option>
+              <option value="1"> aposta1 </option>
+              <option value="2"> aposta tudo </option>
+              <option value="3">LOTOGREEN</option>
+ </option>
             </select>
+            <input type="text" data-vaz="modo fast" readonly="readonly" id="selectedcontent" />
             
             </p><p>Selecione o Número de Previsões</p>
             <select id="selectNumber">
@@ -226,6 +249,29 @@ var clickCount = 0;
     }
 
   });
+</script>
+<script>
+  
+     $('#btnAdicionar').on('click', function() {
+           
+           const vazio = $(this).data('vaz');
+  
+           var input = $('#selectedcontent').val()
+           
+           if (input === '') {
+             $('#selectedcontent').val('modo lucro activo');
+           }
+     })
+           
+           
+
+document.getElementById('btn').addEventListener('click', function() {
+    window.history.back();
+});
+
+
+
+
 </script>
 
 

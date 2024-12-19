@@ -9,7 +9,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
 " rel="folha de estilo">
 <style>
 body{
-  background: black;
+  background: #221F39;
 }
       @-webkit-keyframes notification {
   to {
@@ -57,6 +57,17 @@ width: 150%;
 border:2px solid rebeccapurple;
   
 }
+#tt{
+  color:white;
+  background :black;
+width: 70%;
+height: 50px;
+border:2px solid red;
+}
+#tt:hover {
+  background: white;
+  color: black;
+}
 #a{
   background: #CBDFE6;
   border-radius: 30px;
@@ -74,11 +85,11 @@ border:2px solid rebeccapurple;
   border-radius: 30px;
 }
 input{
-  background: black;
-  border:2px solid  white;
+  background: white;
+  border:2px solid  #FBC704;
   width: 75%;
   height: 25px;
-  color:white;
+  border:2px solid black;
   
 }
 input:hover{
@@ -87,7 +98,8 @@ input:hover{
 .custom-btn {
   width: 200px;
   height: 40px;
-  color: wheat;
+  color: white;
+ 
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -211,31 +223,20 @@ img{
   width: 90px;
   height: 90px;
 }
-#tt{
-  color:white;
-  background :black;
-  width: 70%;
-  height: 50px;
-  border:2px solid red;
-}
-#tt:hover{
-  background:white;
-  color: black ;
-}
 </style>
 </head>
 <body>
   <div>
     <br>
     <p>
-    Donald bet
+    lotogreen
     </p>
-        <img src="https://i.ibb.co/prSBL8k/transferir.png">
-    <a href="fusion.html">ir para o painel fusion</a>
+       <img src="dio.jpg">
+    <a href="donald.html">ir para  apostatudo</a>
   </div>
   <hr> 
 <h1>gráfico</h1>  
-    <mark>exemplo: 39%...</mark>
+    <mark>exemplo: 34%...</mark>
   <hr>
   
   <div id="d">
@@ -248,20 +249,20 @@ img{
   </div>
     <hr>
     <h2>possível</h2>
-        <mark>exemplo: 3.45x saida || 39x saida</mark>
-    <hr>
+        <mark>exemplo: 5x saida || 20x saida</mark>
+    <hr> 
    <div id="a">
      <center>
     <input id="input2" type="text" placeholder="digite aqui..." required><br>
    <center>
     <button onclick="sendMessage(2);gr()"  class="custom-btn btn-5">Enviar possível</button>
     </div>
+    
+    
     <!--
-    <hr> 
     <h3>proteção</h3>
         <mark>exemplo: 2x a 3x🔱</mark>
     <hr>
-    
 <div id="b">
   <center>
     <input id="input3" type="text" placeholder="digite aqui..." required>
@@ -277,20 +278,20 @@ img{
 <div id="c">
   <center>
     <input id="input4" class="container" type="text" placeholder="digite aqui..." >
-    
       <div class="alert" id="alert">O campo não pode estar vazio!</div>
     <br>
     <center>
-    <button id="tt"  onclick="sendMessage(4);gr()"><span>enviar fechar</span> </button>
+    <button id="tt"   onclick="sendMessage(4);gr()"><span>enviar fechar</span> </button>
     </form>
 </div>
 <hr>
 <br>
+
 <br>
 <p style="font-family: Andale Mono, monospace;">
   visualização</p>
   
-        <iframe width="100%" height="500px" src="https://go.aff.donald.bet/uwpecqoz" style="border:2px solid  green; border-radius: 50px;"></iframe>  
+      <iframe width="100%" height="509px" src="https://go.aff.lotogreen.com/gtn5chiw" style="border:2px solid  green; border-radius: 50px;"></iframe>  
   
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
@@ -319,7 +320,7 @@ const firebaseConfig = {
         
         function sendMessage(id) {
             const inputValue = document.getElementById(`input${id}`).value;
-            db.ref(`matrix1/${id}`).set(inputValue);
+            db.ref(`matrix/${id}`).set(inputValue);
         }
     </script>
     <script>
@@ -327,19 +328,26 @@ const firebaseConfig = {
          Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "mensagem enviada",
+          title: "mensagem enviada #black venom",
           showConfirmButton: false,
           timer: 1500
         });
       }
      
-      alert('donald bet painel')
+      
+     
+     alert('fusion bet painel')
      
      
-    </script>
+     document.getElementById('btn').addEventListener('click', function() {
+    window.history.back();
+});
 
+    </script>
+    
     <script src="
     https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
     "></script>
+    
 </body>
 </html>
