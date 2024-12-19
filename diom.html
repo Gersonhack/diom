@@ -28,7 +28,7 @@
    margin-top: 22%;
   }
   body{
-    background: #E4E5EA ;
+    background: #42445A ;
   }
   .gpt{
     position:fixed;
@@ -112,22 +112,37 @@ top: 10%;
             display: inline-block;
             margin-top: 10px;
             padding: 10px;
+         
            display: flex;
            flex-direction:row;
             row-gap: 5px;
             margin-right: 5px;
-            background-color:#42445A2E;
+            background-color:#404363;
             backdrop-filter: bluer(5px);
-            color:#1B1D32;
+            color:white;
            
             text-decoration: none;
             border-radius: 5px;
             margin-bottom: 20px;
             font-size: 15px;
             position: relative;
-           
+           animation: matrix 3s infinite alternate;
           }
           
+      @keyframes matrix{
+        from{
+         transform: scale(0.9)
+        }
+        to{
+          transform: scale(1)
+        }
+        
+      }    
+          
+          .btn-r:hover{
+            background: black;
+            border-right:2px solid red;
+          }
           .btn-r .text{
             text-align: center;
             justify-self: center;
@@ -388,7 +403,7 @@ top: 10%;
 
           <div class="btn-r" onclick="m()" >
             <div>
-              <img src="/images/IMG-20241214-WA0044.jpg" alt="robô">
+              <img src="/dio.jpg" alt="robô">
             </div>
             <span class="text">Diom.aviator</span>
             <span class="icone"> <i class="fa-thin fa-arrow-up-right-from-square"></i></span>
@@ -399,7 +414,7 @@ top: 10%;
             <div>
               <img src="/images/336fed22bca43768a14c2259c54f44f6.jpg" alt="robô">
             </div>
-            <span class="text">Robô jorge Gerador</span>
+            <span class="text">Gerador</span>
             <span class="icone"> <i class="fa-thin fa-arrow-up-right-from-square"></i></span>
           </div>
           
@@ -408,17 +423,15 @@ top: 10%;
             <div>
               <img src="/images/IMG-20241214-WA0041.jpg" alt="robô">
             </div>
-            <span class="text">Robô STELLA V8.0</span>
+            <span class="text">Robô V8.0</span>
             <span class="icone"> <i class="fa-thin fa-arrow-up-right-from-square"></i></span>
               </div>
         </section>
 
   </p>
-  <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded robo">
-   
-  </button>
+
 </div>
-<button class="whatsapp" onclick="location.href='https://api.whatsapp.com/send?phone=+258844096731&text=★᭄~%20ᵒOiê%20⚠️_ajudeme🔥🪀%20⚠️⃤%20ᵉˢᵗᵒᵘ%20ˢᵃˡᵛ'">🧪</button>
+<button class="whatsapp">🧪</button>
 <script>
   function m() {
 Swal.fire({
