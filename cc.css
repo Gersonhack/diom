@@ -976,10 +976,16 @@ border-radius: 27px;
           
         .texto-centralizado {
             position: relative;
-margin-left: -130px;
+margin-left: 130px;
+
 margin-top: -1px; 
-color: red;
+color: white;
 font-size: 14px;}
+            }
+            
+            .texto-centralizado a{
+              background: transparent;
+            
             }
 
 
