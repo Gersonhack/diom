@@ -2,17 +2,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+  
+    min-height: 100vh;
+    background-color:#0b1c30; 
+    color: white; 
+    display: flex ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: black; /* Cor de fundo azul escuro */
-    color: white; /* Cor do texto geral */
 }
 img{
   border-radius: 50px;
   height: 150px;
-  box-shadow:0px 0px 50px greenyellow;
+  background: black;
   width: 150px;
   animation: moveLogo 3s infinite alternate;
   filter: drop-shadow(2px 4px 6px black);
@@ -31,33 +33,48 @@ img{
     box-shadow: 0 0 10px #000000; /* Sombra */
 }
 
+.form-select{
+ 
+  width: 100%;
+}
+
+select{
+  
+}
+
 /* Estilos para seleção e botão */
-.form-select select {
-    width: 100%;
+#optionselect{
+  border-left: 1px solid red !important;
+    width: 80% !important;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid greenyellow; /* Borda cinza */
+    border: 2px solid #173251; /* Borda cinza */
     border-radius: 4px;
     margin-bottom: 10px;
     outline: none;
     background-color: transparent;
+  
+    color: white;
+}
+#selectNumber{
+  border-right: 1px solid red !important;
+width: 50% !important;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #173251; /* Borda cinza */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
     color: white;
 }
 
-.btn-math {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-p{
-  color: greenyellow;
-}
-.btn-math .btn {
+.btn {
     width: 100px;
-    height: 40px;
-    background-color: rgb(0, 0, 0); /* Cor de fundo branca */
+    height: 35px;
+    background-color: red;
     outline: none;
-    border: 2px solid red; /* Borda cinza */
     color:  white; /* Texto em cinza */
     font-size: 18px;
     margin-left: 10px; /* Espaço entre o botão e a seleção */
@@ -66,7 +83,7 @@ p{
 }
 
 /* Estilização para as listas */
-#lista1, #lista2 {
+ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,7 +92,7 @@ p{
 }
 
 #lista1 li, #lista2 li {
-    flex-basis: calc(25% - 16px);
+    flex-basis: calc(25% - 16px) ;
     margin: 4px;
     padding: 8px;
     box-sizing: border-box;
@@ -93,3 +110,12 @@ p{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.gh{
+  display: flex;
+  justify-content: center;
+}
+
+
+

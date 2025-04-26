@@ -1,28 +1,24 @@
-<!DOCTYPE html><html lang="en"><head>
-
-
-    
-    
+<!DOCTYPE html><html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>diom gerador</title>
     <meta charset="UTF-8">
-    
-   
-     <link rel="stylesheet" type="text/css" href="gera.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
      <style>
      
      *{
        border:0;
      }
-       /* Estilos gerais da página */
 input {
   height: 35px;
-  background: black;
-  color: skyblue;
+  background: transparent;
+  color: red;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
   font-size:18px;
   border-radius: 10px;
-  border-top:1px solid greenyellow;
+  border-top:1px solid red;
   text-align: center;
  
 }
@@ -42,7 +38,7 @@ input {
 
         <div class="form-select">
           <center>
-          <img src="/dio.jpg">
+          <img src="/images/diom/IMG-20250426-WA0078.jpg">
             <p>Escolha a sua Casa de Apostas</p><p>
 <select id="optionselect">
               <option value="" selected disable> escolha a casa de apostas </option>
@@ -51,9 +47,9 @@ input {
               <option value="3">LOTOGREEN</option>
  </option>
             </select>
-            <input type="text" data-vaz="modo fast" readonly="readonly" id="selectedcontent" />
+    <input type="text" data-vaz="modo fast" readonly="readonly" id="selectedcontent" />
             
-            </p><p>Selecione o Número de Previsões</p>
+          <div class="gh">
             <select id="selectNumber">
                 <option value="20">20</option>
                 <option value="40">40</option>
@@ -62,22 +58,22 @@ input {
                 <option value="80">80</option>
                 <option value="100">100</option>
             </select>
-            
-            <div class="btn-math">
+         
                 <button class="btn" type="button" id="btnAdicionar">Gerar</button>
-            </div>
            
-            <p style="text-align: center;">_____________Resultados da Busca_____________</p>
+          </div>
+           
+            <p style="text-align: center;">Resultados da Busca</p>
             <ul id="lista2"></ul>
             
-            <p style="text-align: center;">________Conjunção de Dados Semanais________</p>
+            <p style="text-align: center;">Conjunção de Dados Semanais</p>
             <ul id="lista1"></ul>
 
-            <!-- Botão de Logout -->
+         
            
         </div>
 
-        <!-- Importar o arquivo JavaScript -->
+      
 
 
 
@@ -202,7 +198,7 @@ var clickCount = 0;
         var hora = horaAtualCentralizada;
         var minuto = Math.floor(Math.random() * (60 - minutoAtual)) + minutoAtual;
         var segundo = Math.floor(Math.random() * 60);
-
+        clickSound.play();
         var horaFormatada = hora < 10 ? "0" + hora : hora;
         var minutoFormatado = minuto < 10 ? "0" + minuto : minuto;
         var segundoFormatado = segundo < 10 ? "0" + segundo : segundo;
@@ -218,38 +214,11 @@ var clickCount = 0;
         
 
     </div>
-<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
-<script>
-  const firebaseConfig = {
-    apiKey: "AIzaSyB5v0e77dvzHINhHzCKeMs6QPjqo7Z7img",
-    authDomain: "login-database-black.firebaseapp.com",
-    databaseURL: "https://login-database-black-default-rtdb.firebaseio.com",
-    projectId: "login-database-black",
-    storageBucket: "login-database-black.appspot.com",
-    messagingSenderId: "768021690283",
-    appId: "1:768021690283:web:221e866026541faffa04ee"
-  };
-  firebase.initializeApp(firebaseConfig);
-</script>
+    <audio id="clickSound" src="/robo/signal-bot/achive-sound-132273 (2).mp3"></audio>
+
 
 <script>
-  // Verifica se o usuário está autenticado ao carregar a página
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      //Usuário está logado, permanece na tela
-      console.log("Usuário logado!");
-    }
 
-
-    else {
-      //Usuário não está logado, redireciona para index.html
-      console.log("Usuário não logado! Redirecionando...");
-      window.location.replace("../index.html");
-
-    }
-
-  });
 </script>
 <script>
   
@@ -267,6 +236,7 @@ var clickCount = 0;
            
 
 document.getElementById('btn').addEventListener('click', function() {
+ 
     window.history.back();
 });
 
